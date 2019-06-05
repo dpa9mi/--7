@@ -1,0 +1,37 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+
+ setlocale(LC_ALL, ".1251");
+
+ int a, c, i, s;
+ s = 0;
+
+ printf("\n\tВВедiть клькiсть чисел вiд 5 до 30\n\t");
+
+a: cin >> c;
+ if (c >= 5 && c <= 30);
+ else {
+  printf("\n\tВи ввели неправильне число\n\t");
+  goto a;
+ }
+
+ for (i = 0; i < c; i++) {
+  cout << "Введiть число номер:" << i + 1;
+  cin >> a;
+
+
+  if (a > 0) {
+   s = s + a * a;
+  };
+
+ };
+ cout << s;
+
+
+ system("pause");
+ return 0;
+}
